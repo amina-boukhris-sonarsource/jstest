@@ -20,3 +20,9 @@ var Person = Backbone.Model.extend({
         favoriteColors: ["blue","purple","raspberry"]
     }
 });
+
+function foo(a) { // Noncompliant, function exits without "return"
+  if (a == 1) {
+    return true;
+  }
+}
