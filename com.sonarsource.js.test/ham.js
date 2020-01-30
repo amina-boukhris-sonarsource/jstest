@@ -12,3 +12,6 @@ var Person = Backbone.Model.extend({
         favoriteColors: ["blue","purple","raspberry"]
     }
 });
+
+x = 42;
+y = x.length;   // Noncompliant, Number type doesn't have "length" property
