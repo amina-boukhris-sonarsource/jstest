@@ -15,3 +15,8 @@ say("hello", "world", "!"); // Noncompliant; last argument is not used
 
  mySet.add(1);
  mySet.add(1); // Noncompliant - element is already in the set
+var Person = Backbone.Model.extend({
+    defaults: {  // Noncompliant; every instance of Person will share the same instance of favoriteColors
+        favoriteColors: ["blue","purple","raspberry"]
+    }
+});
