@@ -26,3 +26,9 @@ function foo(a) { // Noncompliant, function exits without "return"
     return true;
   }
 }
+new MyConstructor(); // Non-Compliant
+var Item = Backbone.Model.extend({
+    defaults: {  // Noncompliant; every instance of Person will share the same instance of favoriteColors
+        favoriteColors: ["blue","purple","raspberry"]
+    }
+});
