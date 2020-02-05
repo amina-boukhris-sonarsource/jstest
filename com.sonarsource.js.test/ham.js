@@ -22,6 +22,8 @@ while (true) { // Noncompliant; constant end condition
 }
 
 var k;
+var mdrr ;
+
 var b = true;
 while (b) { // Noncompliant; constant end condition
   k++;
