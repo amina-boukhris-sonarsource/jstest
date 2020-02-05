@@ -20,6 +20,7 @@ var j = 0;
 while (true) { // Noncompliant; constant end condition
   j++;
 }
+var myNumber = 010;   // Noncompliant. myNumber will hold 8, not 10 - was this really expected?
 
 var k;
 var mdrr ;
