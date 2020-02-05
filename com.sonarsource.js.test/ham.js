@@ -29,3 +29,8 @@ var b = true;
 while (b) { // Noncompliant; constant end condition
   k++;
 }
+function say(a, b) {
+  print(a + " " + b);
+}
+
+say("hello", "world", "!"); // Noncompliant; last argument is not used
