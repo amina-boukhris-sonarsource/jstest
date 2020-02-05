@@ -29,3 +29,6 @@ var Person = Backbone.Model.extend({
         favoriteColors: ["blue","purple","raspberry"]
     }
 });
+say("hello", "world", "!"); // Noncompliant; last argument is not used
+ fruits[1] = "banana";
+ fruits[1] = "apple";  // Noncompliant - value on index 1 is overwritten
